@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back1jpg"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="355dp"
+        android:layout_height="295dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#3CFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="244dp"
+        android:layout_height="43dp"
+        android:layout_alignTop="@+id/view"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#D3FFFFFF"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#BFFFFFFF"
+        android:ems="10"
+        android:hint="Enter Email/Number"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textColorHighlight="@android:color/holo_blue_bright"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#BFFFFFFF"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@android:color/holo_blue_light"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-54dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="-54dp"
+        android:text="Click Here To Registration"
+        android:textAlignment="center"
+        android:textColor="#1E88E5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:onClick="forgerpassword"
+        android:text="Forget Password??"
+        android:textAlignment="textEnd"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        app:layout_constraintTop_toTopOf="@+id/editTextText3"
+        app:layout_constraintVertical_bias="0.958" />
+
+    ;
+</androidx.constraintlayout.widget.ConstraintLayout>
