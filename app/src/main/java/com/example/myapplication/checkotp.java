@@ -141,9 +141,9 @@ public class checkotp extends AppCompatActivity {
         try {
             String stringSenderEmail ="karanthesia53@gmail.com";
             String stringReceiverEmail=useremail;
-            String stringPasswordSenderEmail = "hycy xttu afwy kqqz";
+            String stringPasswordSenderEmail = "<password>";
 
-            String stringHost = "smtp.gmail.com";
+            String stringHost = "<host>";
 
             Properties properties = System.getProperties();
 
